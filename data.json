@@ -1,0 +1,69 @@
+{
+  "profile": {
+    "name": "Peace Khutso Molimo",
+    "initials": "PKM",
+    "title": "BSc Computer Science Honours Candidate",
+    "department": "Department of Computer Science",
+    "institution": "University of the Western Cape",
+    "tagline": "Designing intelligent systems for equitable, efficient public service delivery in South Africa.",
+    "bio_intro": "I am a BSc Computer Science Honours candidate at the University of the Western Cape, with a background in Physical Sciences. My research sits at the intersection of machine learning and public service delivery — exploring how intelligent systems can solve real, everyday problems faced by South African citizens.",
+    "bio_detail": "My Honours research focuses on developing a Smart Queue Management System for high-traffic government service centres such as the Department of Home Affairs and SASSA. The system integrates an online booking platform with machine learning models — including K-Nearest Neighbours, Random Forest, and Neural Networks — to predict waiting times and improve operational efficiency. This work is driven by a commitment to fairness, accessibility, and data ethics, particularly in contexts where algorithmic bias can have real consequences for vulnerable communities.",
+    "interests": [
+      "Machine Learning & Predictive Modelling",
+      "Smart Queue Management Systems",
+      "Public Service Technology",
+      "Data Ethics & Algorithmic Fairness",
+      "Software & Application Development"
+    ],
+    "skills": ["Python", "Java", "SQL", "Scikit-Learn", "Pandas", "NumPy", "JavaScript", "HTML/CSS", "Git"],
+    "email": "peacemolimo75@gmail.com",
+    "github": "https://github.com/peacekhutso-dev",
+    "linkedin": "https://www.linkedin.com/in/peacekhutso/",
+    "photo": "assets/peace.jpg",
+    "uwc_logo": "assets/uwc-logo.png"
+  },
+  "research": {
+    "title": "Smart Queue Management System",
+    "subtitle": "Reducing waiting times in South African public service centres through machine learning",
+    "abstract": "South African public service centres are widely associated with long queues, with citizens often waiting more than five hours — sometimes leaving without being assisted. This research proposes a Smart Queue Management System integrating online booking with ML algorithms to predict waiting and service times using queue length, staff availability, customer category, and arrival time.",
+    "keywords": ["Queue Management", "Machine Learning", "Random Forest", "KNN", "Neural Networks", "POPIA", "Public Service"]
+  },
+  "terms": [
+    {
+      "id": "term1",
+      "label": "Term 1",
+      "theme": "#00d4aa",
+      "period": "Jan – Mar 2025",
+      "summary": "Literature review, problem framing, and initial research proposal covering predictive coding frameworks and system architecture.",
+      "documents": [
+        {
+          "id": "t1d1",
+          "title": "Literature Review: Queue Management Systems & ML Approaches",
+          "description": "A comprehensive survey of existing queue management systems, examining traditional M/M/s models versus ML-based approaches. Reviews Random Forest, KNN, and Neural Network applications in service-time prediction.",
+          "date": "2025-02-14",
+          "type": "Literature Review",
+          "pages": 28,
+          "pdf": "#"
+        },
+        {
+          "id": "t1d2",
+          "title": "Research Proposal: Smart Queue Management System",
+          "description": "Formal research proposal outlining the development of an ML-powered queue management platform for South African public service centres, including POPIA compliance strategy and cybersecurity considerations.",
+          "date": "2025-02-28",
+          "type": "Research Proposal",
+          "pages": 12,
+          "pdf": "#"
+        },
+        {
+          "id": "t1d3",
+          "title": "Progress Report: Term 1 Supervisor Meeting Notes",
+          "description": "Annotated meeting minutes covering dataset selection strategy, model benchmarking methodology, and revised milestones. Includes discussion of the digital divide challenge for walk-in versus pre-booked users.",
+          "date": "2025-03-15",
+          "type": "Progress Report",
+          "pages": 8,
+          "pdf": "#"
+        }
+      ]
+    }
+  ]
+}

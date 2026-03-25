@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Peace Khutso Molimo — BSc Computer Science Honours research portfolio. Smart Queue Management System, UWC 2025."/>
+    <title>Peace Khutso Molimo · Research Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ══ LOADER ══════════════════════════════════════════════════ -->
+<div id="loader" aria-hidden="true">
+    <div class="ld-ring"></div>
+</div>
+
+<!-- ══ NAVBAR ══════════════════════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-l">
+        <!-- UWC Logo -->
+        <div class="uwc-logo-wrap" id="uwcLogoWrap" title="University of the Western Cape">
+            <img src="assets/uwc-logo.png" alt="UWC Logo" class="uwc-logo" id="uwcLogo"
+                 onerror="this.style.display='none';document.getElementById('uwcFallback').style.display='flex'"/>
+            <div class="uwc-fallback" id="uwcFallback"></div>
+        </div>
+        <div class="nav-divider"></div>
+        <span class="nav-brand"><span class="nav-brand-accent"></span></span>
+    </div>
+
+    <div class="nav-c" id="navTabs" role="tablist"></div>
+
+    <div class="nav-r">
+        <button class="nav-icon-btn" id="searchBtn" aria-label="Search documents" title="Search (⌘K)">
+            <!-- Search icon -->
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="nav-icon-btn" id="themeBtn" aria-label="Toggle theme">
+            <!-- Sun (light mode) -->
+            <svg class="ic-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <!-- Moon (dark mode) -->
+            <svg class="ic-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- ══ MOBILE MENU ══════════════════════════════════════════════ -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mm-inner" id="mmInner"></div>
+</div>
+
+<!-- ══ SIDEBAR ══════════════════════════════════════════════════ -->
+<aside id="sidebar" aria-label="Section navigation">
+    <div class="sb-rail">
+        <div class="sb-items" id="sbItems"></div>
+        <button class="sb-toggle" id="sbToggle" aria-label="Expand sidebar">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+    </div>
+    <!-- Hover preview -->
+    <div class="sb-peek" id="sbPeek" aria-hidden="true">
+        <div id="sbPeekContent"></div>
+    </div>
+</aside>
+
+<!-- ══ SEARCH OVERLAY ════════════════════════════════════════════ -->
+<div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Search">
+    <div class="search-box">
+        <div class="search-row">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input id="searchInput" type="text" placeholder="Search documents…" autocomplete="off" spellcheck="false" aria-label="Search documents"/>
+            <kbd>Esc</kbd>
+        </div>
+        <div id="searchResults" class="search-results"></div>
+    </div>
+</div>
+
+<!-- ══ MAIN ══════════════════════════════════════════════════════ -->
+<main id="main">
+
+    <!-- HERO -->
+    <section id="about" class="s-hero">
+        <div class="hero-bg" aria-hidden="true">
+            <div class="hero-orb a"></div>
+            <div class="hero-orb b"></div>
+            <div class="hero-dots"></div>
+        </div>
+
+        <div class="hero-wrap">
+            <!-- Photo -->
+            <div class="hero-photo-col fade-up" style="--d:0s">
+                <div class="hero-photo-frame">
+                    <img src="assets/peace.jpg" alt="Peace Khutso Molimo"
+                         class="hero-photo" id="heroPhoto"
+                         onerror="document.getElementById('heroPhotoFallback').style.display='flex';this.style.display='none'"/>
+                    <div class="hero-photo-fallback" id="heroPhotoFallback">PKM</div>
+                </div>
+                <!-- UWC badge on photo -->
+                <div class="hero-uwc-badge">
+                    <img src="assets/uwc-logo.png" alt="UWC" class="badge-logo"
+                         onerror="this.parentElement.querySelector('.badge-text').style.display='block';this.style.display='none'"/>
+                    <span class="badge-text" style="display:none">UWC</span>
+                    <span>University of the Western Cape</span>
+                </div>
+            </div>
+
+            <!-- Text -->
+            <div class="hero-text-col">
+                <div class="hero-sup fade-up" style="--d:.08s">
+                    <span class="live-dot" aria-hidden="true"></span>
+                    BSc Computer Science Honours · 2026
+                </div>
+                <h1 class="hero-name fade-up" style="--d:.16s">Peace Khutso<br><em>Molimo</em></h1>
+                <p class="hero-tagline fade-up" style="--d:.24s" id="heroTagline"></p>
+
+                <div class="hero-research-pill fade-up" style="--d:.32s">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    Research: Smart Queue Management System
+                </div>
+
+                <div class="hero-links fade-up" style="--d:.4s">
+                    <a href="mailto:peacemolimo75@gmail.com" class="hero-link hl-sec">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        Email
+                    </a>
+                    <a href="https://github.com/peacekhutso-dev" target="_blank" rel="noopener" class="hero-link hl-sec">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/peacekhutso/" target="_blank" rel="noopener" class="hero-link hl-sec">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT / BIO -->
+    <section class="s-bio appear" id="bio">
+        <div class="inner">
+            <div class="section-label">About</div>
+            <div class="bio-grid">
+                <div>
+                    <h2 class="s-heading">Background &amp; <em>Motivation</em></h2>
+                    <p class="bio-p" id="bioIntro"></p>
+                    <p class="bio-p" id="bioDetail"></p>
+                </div>
+                <div class="bio-cards">
+                    <div class="bcard glass">
+                        <div class="bcard-label">Research Interests</div>
+                        <ul class="interest-list" id="interestList"></ul>
+                    </div>
+                    <div class="bcard glass">
+                        <div class="bcard-label">Technical Skills</div>
+                        <div class="skills-wrap" id="skillsWrap"></div>
+                    </div>
+                    <div class="bcard glass">
+                        <div class="bcard-label">Contact</div>
+                        <div id="contactBlock"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESEARCH OVERVIEW -->
+    <section class="s-research appear" id="research">
+        <div class="inner">
+            <div class="section-label">Research</div>
+            <h2 class="s-heading" id="researchTitle"></h2>
+            <p class="research-sub" id="researchSub"></p>
+            <div class="abstract-box glass" id="abstractBox">
+                <div class="abs-label">Abstract</div>
+                <p id="abstractText"></p>
+            </div>
+            <div class="kw-row" id="kwRow"></div>
+        </div>
+    </section>
+
+    <!-- TERMS (injected) -->
+    <div id="termsWrap"></div>
+
+</main>
+
+<!-- ══ FOOTER ══════════════════════════════════════════════════ -->
+<footer id="footer">
+    <div class="footer-inner">
+        <div class="footer-l">
+            <img src="assets/uwc-logo.png" alt="UWC" class="footer-logo"
+                 onerror="this.style.display='none'"/>
+            <span id="footerName">Peace Khutso Molimo</span>
+        </div>
+        <span class="footer-copy">© <span id="footerYear"></span> · University of the Western Cape</span>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
