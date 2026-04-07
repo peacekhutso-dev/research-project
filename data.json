@@ -38,30 +38,30 @@
       "documents": [
         {
           "id": "t1d1",
-          "title": "Literature Review: Queue Management Systems & ML Approaches",
-          "description": "A comprehensive survey of existing queue management systems, examining traditional M/M/s models versus ML-based approaches. Reviews Random Forest, KNN, and Neural Network applications in service-time prediction.",
-          "date": "2025-02-14",
-          "type": "Literature Review",
-          "pages": 28,
-          "pdf": "#"
+          "title": "Research Report",
+          "description": "Machine Learning-Based Smart Queue Management System to Improve Service Delivery in South Africa. Covers literature review, system architecture, UML diagrams, functional and non-functional requirements, and cybersecurity considerations.",
+          "date": "2025-04-07",
+          "type": "Report",
+          "icon": "report",
+          "url": "https://drive.google.com/file/d/1mEqf8YuG0F4z2PSE5MMjMZFhk2E329aJ/view?usp=drive_link"
         },
         {
           "id": "t1d2",
-          "title": "Research Proposal: Smart Queue Management System",
-          "description": "Formal research proposal outlining the development of an ML-powered queue management platform for South African public service centres, including POPIA compliance strategy and cybersecurity considerations.",
-          "date": "2025-02-28",
-          "type": "Research Proposal",
-          "pages": 12,
-          "pdf": "#"
+          "title": "Presentation Video",
+          "description": "Recorded presentation walkthrough of the Smart Queue Management System proposal, covering motivation, system design, ML models, and expected outcomes.",
+          "date": "2025-04-07",
+          "type": "Video",
+          "icon": "video",
+          "url": "https://drive.google.com/file/d/1SjFvxH-ZNdzP5fAOpyQp4D3gF-LuqBh5/view?usp=drive_link"
         },
         {
           "id": "t1d3",
-          "title": "Progress Report: Term 1 Supervisor Meeting Notes",
-          "description": "Annotated meeting minutes covering dataset selection strategy, model benchmarking methodology, and revised milestones. Includes discussion of the digital divide challenge for walk-in versus pre-booked users.",
-          "date": "2025-03-15",
-          "type": "Progress Report",
-          "pages": 8,
-          "pdf": "#"
+          "title": "Presentation Slides",
+          "description": "PowerPoint slide deck used for the Term 1 research presentation. Covers problem context, proposed system architecture, ML approach, user roles, and project timeline.",
+          "date": "2025-04-07",
+          "type": "Slides",
+          "icon": "slides",
+          "url": "https://docs.google.com/presentation/d/1UTMX4q7zcT_navJGhmZDmywid9kPgpJp/edit?usp=sharing&ouid=114023197134091862471&rtpof=true&sd=true"
         }
       ]
     }

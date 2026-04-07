@@ -7,17 +7,41 @@ const IC = {
   about: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`,
   doc:   `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>`,
   res:   `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>`,
-  dl:    `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>`,
   mail:  `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>`,
   gh:    `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>`,
   li:    `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>`,
   loc:   `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>`,
   search:`<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>`,
-  pdf:   `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>`,
+  report:`<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>`,
+  video: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>`,
+  slides:`<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>`,
+  open:  `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`,
+};
+
+/* ── Type config ──────────────────────────────────────────────── */
+const TYPE_CONFIG = {
+  Report: {
+    icon: 'report',
+    color: '#00d4aa',
+    btnLabel: 'Open Report',
+    actionLabel: 'View PDF'
+  },
+  Video: {
+    icon: 'video',
+    color: '#f97316',
+    btnLabel: 'Watch Video',
+    actionLabel: 'Open Video'
+  },
+  Slides: {
+    icon: 'slides',
+    color: '#6366f1',
+    btnLabel: 'View Slides',
+    actionLabel: 'Open Slides'
+  }
 };
 
 /* ── State ────────────────────────────────────────────────────── */
-let D = null;                  // loaded data
+let D = null;
 let sbExpanded = false;
 let activeSec = 'about';
 let peekTimer = null;
@@ -34,7 +58,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       profile: { name: 'Peace Khutso Molimo', initials: 'PKM', title: 'BSc Computer Science Honours Candidate',
         department: 'Computer Science', institution: 'University of the Western Cape',
         tagline: 'Designing intelligent systems for equitable, efficient public service delivery.',
-        bio_intro: '', bio_detail: '', interests: [], skills: [], email: '', github: '#', linkedin: '#', photo: '', uwc_logo: '' },
+        bio_intro: '', bio_detail: '', interests: [], skills: [], email: '', github: '#', linkedin: '#' },
       research: { title: 'Smart Queue Management System', subtitle: '', abstract: '', keywords: [] },
       terms: []
     };
@@ -48,7 +72,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   initScrollSpy();
   initReveal();
 
-  // Hide loader after short delay
   setTimeout(() => document.getElementById('loader').classList.add('gone'), 500);
 });
 
@@ -65,7 +88,6 @@ function render() {
   document.getElementById('footerYear').textContent = new Date().getFullYear();
 }
 
-
 /* ── Hero ─────────────────────────────────────────────────────── */
 function renderHero() {
   const p = D.profile;
@@ -79,15 +101,12 @@ function renderBio() {
   setEl('bioIntro',  p.bio_intro);
   setEl('bioDetail', p.bio_detail);
 
-  // Interests
   document.getElementById('interestList').innerHTML =
     (p.interests || []).map(i => `<li>${i}</li>`).join('');
 
-  // Skills
   document.getElementById('skillsWrap').innerHTML =
     (p.skills || []).map(s => `<span class="skill-pill">${s}</span>`).join('');
 
-  // Contact
   let c = '';
   if (p.email)       c += contactRow(IC.mail, `<a href="mailto:${p.email}">${p.email}</a>`);
   if (p.institution) c += contactRow(IC.loc,  p.institution);
@@ -128,7 +147,7 @@ function renderTerms() {
                  data-tid="${term.id}" oninput="filterDocs(this)" aria-label="Filter documents"/>
         </div>
 
-        <div class="doc-grid" id="grid-${term.id}">
+        <div class="doc-grid doc-grid-tri" id="grid-${term.id}">
           ${term.documents.map(d => docCard(d, term)).join('')}
         </div>
       </div>
@@ -137,22 +156,25 @@ function renderTerms() {
 }
 
 function docCard(d, term) {
+  const cfg = TYPE_CONFIG[d.type] || { icon: 'report', color: term.theme, btnLabel: 'Open', actionLabel: 'Open' };
+  const cardColor = cfg.color;
+  const disabled = !d.url || d.url === '#';
   const date = new Date(d.date).toLocaleDateString('en-ZA', { day: 'numeric', month: 'short', year: 'numeric' });
-  const disabled = !d.pdf || d.pdf === '#';
+
   return `
-    <div class="doc-card" style="--tc:${term.theme}"
+    <div class="doc-card doc-card-feature" style="--tc:${cardColor}"
          data-q="${(d.title + ' ' + d.type + ' ' + d.description).toLowerCase()}">
-      <div class="dc-top">
-        <span class="dc-type" style="background:${term.theme}18;color:${term.theme}">${d.type}</span>
-        <span class="dc-date">${date}</span>
+      <div class="dc-icon-wrap" style="background:${cardColor}18;border-color:${cardColor}30">
+        <span style="color:${cardColor}">${IC[cfg.icon]}</span>
       </div>
+      <div class="dc-type-badge" style="background:${cardColor}18;color:${cardColor}">${d.type}</div>
       <div class="dc-title">${d.title}</div>
       <div class="dc-desc">${d.description}</div>
       <div class="dc-foot">
-        <span class="dc-pages">${IC.pdf} ${d.pages}p</span>
+        <span class="dc-date-small">${date}</span>
         ${disabled
-          ? `<span class="dc-btn disabled">${IC.dl} PDF</span>`
-          : `<a class="dc-btn" href="${d.pdf}" target="_blank" rel="noopener">${IC.dl} Open PDF</a>`}
+          ? `<span class="dc-btn disabled">${IC.open} ${cfg.btnLabel}</span>`
+          : `<a class="dc-btn" href="${d.url}" target="_blank" rel="noopener" style="background:${cardColor};border-color:${cardColor}">${IC.open} ${cfg.btnLabel}</a>`}
       </div>
     </div>
   `;
@@ -254,9 +276,10 @@ function showPeek(id) {
     const term = D.terms.find(t => t.id === id);
     if (!term) return;
     content.innerHTML = `<div class="sbp-hl">${term.label} · ${term.period}</div>` +
-      term.documents.map(d =>
-        `<div class="sbp-row"><div class="sbp-d" style="background:${term.theme}"></div>${d.title}</div>`
-      ).join('');
+      term.documents.map(d => {
+        const cfg = TYPE_CONFIG[d.type] || {};
+        return `<div class="sbp-row"><div class="sbp-d" style="background:${cfg.color || term.theme}"></div>${d.type}: ${d.title}</div>`;
+      }).join('');
   }
   peek.classList.add('show');
 }
@@ -338,9 +361,8 @@ function initReveal() {
     entries.forEach(e => {
       if (!e.isIntersecting) return;
       e.target.classList.add('in');
-      // Stagger doc cards inside
       e.target.querySelectorAll('.doc-card').forEach((c, i) => {
-        setTimeout(() => c.classList.add('in'), i * 55);
+        setTimeout(() => c.classList.add('in'), i * 80);
       });
       io.unobserve(e.target);
     });
@@ -393,15 +415,18 @@ function initSearch() {
       results.innerHTML = `<div class="sr-empty">No results for "<strong>${escHtml(q)}</strong>"</div>`;
       return;
     }
-    results.innerHTML = hits.slice(0, 8).map(({ term, doc }) => `
-      <div class="sr-item" onclick="goTo('${term.id}'); close()">
-        <div class="sr-icon" style="background:${term.theme}18;color:${term.theme}">${IC.pdf}</div>
-        <div>
-          <div class="sr-title">${hl(doc.title, q)}</div>
-          <div class="sr-sub">${term.label} · ${doc.type}</div>
+    results.innerHTML = hits.slice(0, 8).map(({ term, doc }) => {
+      const cfg = TYPE_CONFIG[doc.type] || { color: term.theme, icon: 'report' };
+      return `
+        <div class="sr-item" onclick="goTo('${term.id}'); close()">
+          <div class="sr-icon" style="background:${cfg.color}18;color:${cfg.color}">${IC[cfg.icon]}</div>
+          <div>
+            <div class="sr-title">${hl(doc.title, q)}</div>
+            <div class="sr-sub">${term.label} · ${doc.type}</div>
+          </div>
         </div>
-      </div>
-    `).join('');
+      `;
+    }).join('');
   });
 }
 
