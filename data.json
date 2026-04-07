@@ -6,8 +6,8 @@
     "department": "Department of Computer Science",
     "institution": "University of the Western Cape",
     "tagline": "Designing intelligent systems for equitable, efficient public service delivery in South Africa.",
-    "bio_intro": "I am a BSc Computer Science Honours candidate at the University of the Western Cape, with a background in Physical Sciences. My research sits at the intersection of machine learning and public service delivery — exploring how intelligent systems can solve real, everyday problems faced by South African citizens.",
-    "bio_detail": "My Honours research focuses on developing a Smart Queue Management System for high-traffic government service centres such as the Department of Home Affairs and SASSA. The system integrates an online booking platform with machine learning models — including K-Nearest Neighbours, Random Forest, and Neural Networks — to predict waiting times and improve operational efficiency. This work is driven by a commitment to fairness, accessibility, and data ethics, particularly in contexts where algorithmic bias can have real consequences for vulnerable communities.",
+    "bio_intro": "I am a BSc Computer Science Honours candidate at the University of the Western Cape, with a background in Physical Sciences. My research sits at the intersection of machine learning fused with public service delivery, exploring how intelligent systems can solve real, everyday problems faced by South African citizens.",
+    "bio_detail": "My Honours research focuses on developing a Smart Queue Management System for high-traffic public service centres such as the Department of Home Affairs and SASSA. The system integrates an online booking platform with machine learning models, including K-Nearest Neighbours, Random Forest, and Neural Networks ,to predict waiting times and improve operational efficiency. This work is driven by a commitment to fairness, accessibility, and data ethics, particularly in contexts where algorithmic bias can have real consequences for vulnerable communities.",
     "interests": [
       "Machine Learning & Predictive Modelling",
       "Smart Queue Management Systems",
@@ -15,7 +15,7 @@
       "Data Ethics & Algorithmic Fairness",
       "Software & Application Development"
     ],
-    "skills": ["Python", "Java", "SQL", "Scikit-Learn", "Pandas", "NumPy", "JavaScript", "HTML/CSS", "Git"],
+    "skills": ["Python", "Java", "SQL","Scikit-Learn", "Pandas", "NumPy", "JavaScript", "HTML/CSS", "Git"],
     "email": "peacemolimo75@gmail.com",
     "github": "https://github.com/peacekhutso-dev",
     "linkedin": "https://www.linkedin.com/in/peacekhutso/",
@@ -25,8 +25,8 @@
   "research": {
     "title": "Smart Queue Management System",
     "subtitle": "Reducing waiting times in South African public service centres through machine learning",
-    "abstract": "South African public service centres are widely associated with long queues, with citizens often waiting more than five hours — sometimes leaving without being assisted. This research proposes a Smart Queue Management System integrating online booking with ML algorithms to predict waiting and service times using queue length, staff availability, customer category, and arrival time.",
-    "keywords": ["Queue Management", "Machine Learning", "Random Forest", "KNN", "Neural Networks", "POPIA", "Public Service"]
+    "abstract": "South African public service centres are widely associated with long queues, with citizens often waiting more than several hours, sometimes leaving without being assisted. This research proposes a Smart Queue Management System integrating online booking with ML algorithms to predict waiting and service times using queue length, staff availability, customer category, and arrival time.",
+    "keywords": ["Queue Management", "Machine Learning", "Random Forest", "KNN", "Neural Networks", "POPIA", "Public Service", "Cybersecurity"]
   },
   "terms": [
     {
@@ -43,7 +43,7 @@
           "date": "2025-04-07",
           "type": "Report",
           "icon": "report",
-          "url": "https://drive.google.com/file/d/1mEqf8YuG0F4z2PSE5MMjMZFhk2E329aJ/view?usp=drive_link"
+          "url": "https://drive.google.com/file/d/1AYunrdfe7g0GFYv6yJgA5QBW4Bm8PBc2/view?usp=sharing"
         },
         {
           "id": "t1d2",
@@ -52,7 +52,7 @@
           "date": "2025-04-07",
           "type": "Video",
           "icon": "video",
-          "url": "https://drive.google.com/file/d/1SjFvxH-ZNdzP5fAOpyQp4D3gF-LuqBh5/view?usp=drive_link"
+          "url": "https://docs.google.com/videos/d/1waVBs7dA3zGzm-Ep5iovaslDwPjmhimMyQRT6pSoCak/edit?usp=sharing"
         },
         {
           "id": "t1d3",
